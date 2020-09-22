@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: authority-management
+  redis:
+    host: 58.215.52.151
+    port: 4041
+    lettuce:
+      pool:
+        max-active: 8
+        max-wait: 200
+        max-idle: 8
+        min-idle: 2
+    timeout: 2000
+  cache:
+    ehcache:
+      config: classpath:ehcache.xml
+    type: EHCACHE
+server:
+  port: 8920
